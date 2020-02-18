@@ -151,10 +151,12 @@
     <ClCompile Include="Driver.cpp" />
     <ClCompile Include="IllegalMoveException.cpp" />
     <ClCompile Include="TicTacToeBoard.cpp" />
+    <ClCompile Include="TicTacToeGame.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IllegalMoveException.h" />
     <ClInclude Include="TicTacToeBoard.h" />
+    <ClInclude Include="TicTacToeGame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

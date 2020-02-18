@@ -24,12 +24,18 @@
     <ClCompile Include="Driver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TicTacToeGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TicTacToeBoard.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="IllegalMoveException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TicTacToeGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

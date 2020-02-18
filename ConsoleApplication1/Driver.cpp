@@ -2,16 +2,54 @@
 //
 
 #include <iostream>
+#include <string>
 
 #include "TicTacToeBoard.h"
+#include "TicTacToeGame.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Welcome to Tic Tac Toe!\n";
 
-    TicTacToeBoard* board = new TicTacToeBoard(3);
+    std::cout << "How many players? ";
 
-    std::cout << *board;
+    // add some input checkin here
+
+    int playersCount;
+    char* players;
+    int size;
+    
+    std::cin >> playersCount;
+
+    std::cout << "\nEnter your player characters:";
+
+    // one extra chacter for the sweet null terminator
+    players = (char*)malloc((playersCount + 1) * sizeof(char));
+
+    for (int i = 0; i < playersCount; i++) {
+        std::cout << "\nPlayer " << i << ": ";
+
+        std::cin >> players[i];
+    }
+
+    players[playersCount] = '\0';
+
+    std::cout << "What is the size of the board?";
+
+    std::cin >> size;
+
+    std::cout << "Spectacular, let's play!\n";
+
+    TicTacToeGame* game = new TicTacToeGame(playersCount, players, size);
+
+    while (!game->is_game_won()) {
+
+    }
+
+}
+
+void prompt_player_move() {
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
